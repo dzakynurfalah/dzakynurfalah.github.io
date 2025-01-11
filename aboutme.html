@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzaky Nurfalah Personal Website</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="about.html">About me</a>
+    </nav>
+
+    <hr />
+
+    <h1>About Me</h1>
+
+        <p>
+            <video id="video" width="150" controls>
+                <source src="video/VID_20241214_003909_414.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              
+              <!-- Elemen canvas untuk memproses frame -->
+             
+            
+              <script>
+                const video = document.getElementById('video');
+                const canvas = document.getElementById('canvas');
+                const ctx = canvas.getContext('2d');
+            
+                // Saat video dimulai, kita akan mengatur video untuk ditampilkan di dalam canvas
+                video.addEventListener('play', function() {
+                  function drawFrame() {
+                    if (!video.paused && !video.ended) {
+                      ctx.drawImage(video, 0, 0, canvas.width, canvas.height); // Memindahkan frame video ke canvas
+                      requestAnimationFrame(drawFrame); // Loop untuk menggambar frame berikutnya
+                    }
+                  }
+                  drawFrame(); // Mulai menggambar frame
+                });
+              </script>
+        </p>
+
+    <article>
+      
+          <p style="font-family: 'Times New Roman', Times, serif;">
+            Namanya adalah dzaky nurfalah aulia herdy putra, lahir di malang, 27 Mei 2003,<br>
+            ia adalah anak kedua dari dua bersaudara.<br>
+            jeki adalah nama panggilannya, ia terlahir di keluarga yang sederhana,<br>
+            ibunya bekerja sebagai guru di sekolah menengah atas (SMA).<br>
+            sejak kecil, dia selalu dinasehati untuk selalu rajin beribadah,<br>
+            jujur dan baik kepada semua makhluk hidup.</p>
+        
+          <p style="font-family: 'Times New Roman', Times, serif;">
+            Ketika berumur 4 tahun, ia bersama keluarga kecilnya pindah ke kalimantan selatan<br>
+            dan memulai pendidikan di SDN kempung baru 6, simpang empat,<br>
+            saat kelas 3 sd,ia pindah ikut nenek dan kakeknya dan bersekolah di SDN sukun 1 kota malang,jawa timur.<br>
+            kemudian setelah lulus ia kembali lagi ke kalimantan ikut bersama orang tua nya<br>
+            dan melanjutkan pendidikannya di SMPN 1 simpang empat di tahun 2016.<br>
+            Setelah lulus dari SMP di tahun 2019, dia melanjutkan pendidikannya di SMAN 1 simpang empat hingga lulus.<br>
+            dan setelah lulus SMA,dia kembali lagi ke kota kelahirannya<br>
+            dan hingga saat ini dia berkuliah di universitas negeri malang (UMM).</p>
+          <p style="font-family: 'Times New Roman', Times, serif;">
+            sewaktu kecil ada makhluk hidup yang sangat akrab denganku,<br>
+            mereka lebih dari sekedar teman,mereka adalah keluargaku diluar<br>
+            mereka ada disaat aku merasakan kesenangan maupun kesedihan.<br>
+            kami tidak ada hubungan darah,tetapi chemistry kami sangat kuat.<br>
+            banyak momen yang sudah ku lewati bersama mereka,entah itu tentang kebaikan maupun kejahatan hahaha.<br>
+            banyak sekali cerita yang sudah kami buat untuk diceritakan di masa depan,<br>
+            entah itu tentang petualangan,penjajahan ataupun cinta.<br>
+            juga banyak mimpi yang kami rencanakan untuk masa depan yang entah itu akan terjadi atau tidak.<br>
+            masa depan terasa jauh sangat indah jika diceritakan bersama-sama dengan mereka hahaha.<br></p>
+          
+          <p style="font-family: 'Times New Roman', Times, serif;">
+            kami semua bertemu di salah satu pemukiman di kota tempat kelahiranku<br>
+            tempat tinggal kami tidaklah jauh antara satu dengan yang lainnya<br>
+            kami selalu berkumpul di salah satu rumah dari mereka yang kini sudah kami anggap seperti rumah kami sendiri<br>
+            bahkan keluarganya pun sudah serasa menjadi keluarga kami<br>
+            mereka lah sekumpulan makhluk hidup yang mempunyai tempat tersendiri di hatiku<br>
+            walaupun kadang mereka mengesalkan,tapi sifat mereka lah yang selalu membuatku tertawa bahagia.</p>
+          
+          <p><h3>"Sahabat adalah seseorang yang menari bersamamu di bawah matahari dan berjalan bersamamu dikegelapan."</h3></p>
+
+    </article>
+
+    <hr>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2025 Kanjeng Gusti Pangeran Adipati Dzaky.</p>
+    </footer>
+</body>
+</html>
